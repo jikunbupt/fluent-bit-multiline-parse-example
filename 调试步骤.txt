@@ -1,0 +1,5 @@
+调试步骤
+docker pull fluent/fluent-bit:1.8-debug
+docker run --rm -it -v /Your path/multiline_parse/:/multiline_parse fluent/fluent-bit:1.8-debug sh
+cd /multiline_parse
+/fluent-bit/bin/fluent-bit -c fluent-bit.conf
